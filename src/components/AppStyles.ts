@@ -23,4 +23,11 @@ export const LoginContainer = styled.div`
   background-color: white;
   width: 25vw;
   height: 70vh;
+  border-radius: 10px;
+  text-align: center;
+`;
+
+export const BtnGreen = styled.button`
+  width: 100%;
+  background-color: #76bb4c;
 `;

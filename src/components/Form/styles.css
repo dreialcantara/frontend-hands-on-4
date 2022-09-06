@@ -1,0 +1,21 @@
+.logo {
+    width: 171px;
+    height: 185px;
+}
+
+.form-control {
+    display: inline;
+    padding: 0.5vh;
+
+}
+
+.btn-primary {
+    background-color: #76BB4C;
+    border: none;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #286900;
+    border: none;
+}

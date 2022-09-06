@@ -1,5 +1,8 @@
 const logologin = require("../../img/logo.png");
 
-export default function LogoLogin() {
-  return <img src={`${logologin}`} alt="background"></img>;
+interface LogoLoginProps {
+  className: string;
+}
+export default function LogoLogin(props: LogoLoginProps) {
+  return <img src={`${logologin}`} alt="Logo" className="logo img-fluid"></img>;
 }
