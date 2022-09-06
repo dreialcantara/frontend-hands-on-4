@@ -1,13 +1,14 @@
 import Form from "react-bootstrap/Form";
 import ButtonSubmit from "../ButtonSubmit";
 import LogoLogin from "../LogoLogin";
+import Input from "../Input";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../Form/styles.css";
+import "./styles.css";
 
-import * as C from "../../../src/components/AppStyles";
+import * as C from "../AppStyles";
 
-function FormFloatingBasicExample() {
+function FormLogin() {
   return (
     <C.LoginContainer>
       <div className="container justify-content-center align-items-center">
@@ -15,7 +16,7 @@ function FormFloatingBasicExample() {
         <p className="mb-4">LOGIN</p>
         <Form className="">
           <Form.Group className="mb-2 " controlId="formGroupEmail">
-            <Form.Control
+            <Input
               type="email"
               placeholder="email"
               className="mb-2 text-center w-75"
@@ -39,4 +40,4 @@ function FormFloatingBasicExample() {
   );
 }
 
-export default FormFloatingBasicExample;
+export default FormLogin;

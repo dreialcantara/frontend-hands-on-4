@@ -1,14 +1,8 @@
 import React from "react";
-import * as C from "../src/components/AppStyles";
-
-import FormFloatingBasicExample from "./components/Form";
+import Routes from "./Routes";
 
 function App() {
-  return (
-    <C.Wrapper>
-      <FormFloatingBasicExample />;
-    </C.Wrapper>
-  );
+  return <Routes />;
 }
 
 export default App;
