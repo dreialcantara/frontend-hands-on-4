@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
 `;
 
 export const LoginContainer = styled.div`
-  border-radius: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,8 +21,7 @@ export const LoginContainer = styled.div`
   position: absolute;
   background-color: white;
   width: 25vw;
-  height: 70vh;
-  border-radius: 10px;
+  height: 75vh;
   text-align: center;
 `;
 

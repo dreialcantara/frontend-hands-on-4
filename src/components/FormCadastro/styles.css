@@ -8,7 +8,6 @@
     background-color: #76BB4C;
     border: none;
     color: black;
-
 }
 
 .btn-primary:hover {
@@ -16,12 +15,7 @@
     border: none;
 }
 
-.link {
-    text-decoration: none;
-    color: black
-}
+.cadastroContainer {
+    height: 95vh !important;
 
-.link:hover {
-    text-decoration: none;
-    color: black
 }

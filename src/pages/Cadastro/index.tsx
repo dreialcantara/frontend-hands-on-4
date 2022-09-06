@@ -1,14 +1,14 @@
 import React from "react";
 import * as C from "../../../src/components/AppStyles";
 
-import FormFloatingBasicExample from "../../components/FormLogin";
+import FormCadastro from "../../components/FormCadastro";
 
-function Login() {
+function Cadastro() {
   return (
     <C.Wrapper>
-      <FormFloatingBasicExample />;
+      <FormCadastro />;
     </C.Wrapper>
   );
 }
 
-export default Login;
+export default Cadastro;

@@ -2,6 +2,7 @@ import Form from "react-bootstrap/Form";
 import ButtonSubmit from "../ButtonSubmit";
 import LogoLogin from "../LogoLogin";
 import Input from "../Input";
+import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
@@ -34,7 +35,9 @@ function FormLogin() {
           </Form.Group>
           <ButtonSubmit className="" text="entrar" action="subtmit" />
         </Form>
-        <p>cadastre-se</p>
+        <Link className="link" to="/cadastro">
+          cadastre-se
+        </Link>
       </div>
     </C.LoginContainer>
   );
