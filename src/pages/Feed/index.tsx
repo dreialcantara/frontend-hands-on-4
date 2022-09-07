@@ -1,13 +1,17 @@
 import React from "react";
 
 import Header from "../../components/Header";
-import GridFeed from "../../components/GridFeed";
+import CardPost from "../../components/CardPost";
+import CardFeed from "../../components/Card";
 
 function Login() {
   return (
     <>
       <Header />
-      <GridFeed />;
+      <div className="d-flex flex-column align-items-center">
+        <CardPost />
+        <CardFeed />
+      </div>
     </>
   );
 }
