@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
+
 import { Link } from "react-router-dom";
 
 import "./styles.css";
@@ -16,8 +17,12 @@ function Header() {
             <img alt="" src={logoheader} className="img-fluid align-center" />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
+
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          className="collapse justify-content-end"
+        >
           <Navbar.Text> Olá, usuário | </Navbar.Text>{" "}
           <Link to="/">
             {" "}

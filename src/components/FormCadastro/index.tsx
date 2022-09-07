@@ -17,36 +17,36 @@ function FormCadastro() {
           <Form.Control
             type="text"
             placeholder="nome"
-            className="mb-2 text-center w-75"
+            className="mb-2 text-center w-100"
           />
           <Form.Control
             type="email"
             placeholder="email"
-            className="mb-2 text-center w-75"
+            className="mb-2 text-center w-100"
           />
 
           <Form.Control
             type="password"
             placeholder="senha"
-            className="mb-2 text-center w-75"
+            className="mb-2 text-center w-100"
           />
 
           <Form.Control
             type="password"
             placeholder="confirmar senha"
-            className="mb-2 text-center w-75"
+            className="mb-2 text-center w-100"
           />
 
           <Form.Control
             type="text"
             placeholder="unidade/apartamento"
-            className="mb-2 text-center w-75"
+            className="mb-2 text-center w-100"
           />
 
           <Form.Control
             type="text"
             placeholder="link da foto"
-            className="mb-4 text-center w-75"
+            className="mb-4 text-center w-100"
           />
 
           <ButtonSubmit className="" text="entrar" action="subtmit" />

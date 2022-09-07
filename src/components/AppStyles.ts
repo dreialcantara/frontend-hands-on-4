@@ -22,11 +22,11 @@ export const LoginContainer = styled.div`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  position: absolute;
   background-color: white;
-  width: 28vw;
-  height: 80vh;
+  padding: 50px;
+  max-height: 702px;
   text-align: center;
+  max-width: 350px;
 `;
 
 export const BtnGreen = styled.button`

@@ -11,34 +11,27 @@ import "./styles.css";
 
 function FormLogin() {
   return (
-    <C.LoginContainer>
-      <div className="container justify-content-center align-items-center">
-        <LogoLogin className="" />
+    <C.LoginContainer className="container-fluid">
+      <LogoLogin className="" />
+
+      <Form className="">
         <p className="mb-4">LOGIN</p>
-        <Form className="">
-          <Form.Group className="mb-2 " controlId="formGroupEmail">
-            <Input
-              type="email"
-              placeholder="email"
-              className="mb-2 text-center w-75"
-            />
-          </Form.Group>
-          <Form.Group
-            className="mb-2 text-center"
-            controlId="formGroupPassword"
-          >
-            <Form.Control
-              type="password"
-              placeholder="senha"
-              className="mb-2 text-center w-75"
-            />
-          </Form.Group>
-          <ButtonSubmit className="" text="entrar" action="subtmit" />
-        </Form>
+
+        <Form.Control
+          type="email"
+          placeholder="email"
+          className="mb-2 text-center w-100"
+        />
+        <Form.Control
+          type="password"
+          placeholder="senha"
+          className="mb-3 text-center w-100"
+        />
+        <ButtonSubmit className="w-100 p-5" text="entrar" action="submit" />
         <Link className="link" to="/cadastro">
           cadastre-se
         </Link>
-      </div>
+      </Form>
     </C.LoginContainer>
   );
 }
