@@ -7,7 +7,7 @@ const profileimg = require("../../img/profileimg.png");
 
 function CardPost() {
   return (
-    <Card className="d-flex w-50 border-top-0 rounded-0 mt-1">
+    <Card className="d-flex w-100 border-top-0 border-end-0 border-start-0 rounded-0 mt-1">
       <Card.Title></Card.Title>
       <Card.Body>
         <div className="d-flex justify-content-evenly">

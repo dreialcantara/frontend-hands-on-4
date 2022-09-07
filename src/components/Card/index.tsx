@@ -6,7 +6,7 @@ const imgfriend = require("../../img/imgfriend.png");
 
 function CardFeed() {
   return (
-    <Card className="d-flex w-50 rounded-0 border-top-0   ">
+    <Card className="d-flex w-100 sm-w-100 rounded-0 border-top-0 border-end-0 border-start-0   ">
       <Card.Body className="d-flex">
         <img src={imgfriend} className="imgfriend align-self-center " alt="" />
         <div className="d-flex w-0 h-0 mb-2 ">

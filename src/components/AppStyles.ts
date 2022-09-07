@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   background-image: url(${backgroundimage});
-  background-size: contain;
-  background-repeat: repeat;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   height: 100vh;
