@@ -5,9 +5,9 @@ import Input from "../Input";
 import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
 
 import * as C from "../AppStyles";
+import "./styles.css";
 
 function FormLogin() {
   return (

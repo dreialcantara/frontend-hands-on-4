@@ -11,7 +11,10 @@ function Header() {
     <Navbar className="navbar p-0 shadow-sm bg-white rounded">
       <Container>
         <Navbar.Brand>
-          <img alt="" src={logoheader} className="d-flex align-top" />
+          <Link to="/">
+            {" "}
+            <img alt="" src={logoheader} className="d-flex align-top" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">

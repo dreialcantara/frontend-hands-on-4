@@ -23,8 +23,8 @@ export const LoginContainer = styled.div`
   box-sizing: border-box;
   position: absolute;
   background-color: white;
-  width: 25vw;
-  height: 75vh;
+  width: 30vw;
+  height: 80vh;
   text-align: center;
 `;
 
