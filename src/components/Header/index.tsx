@@ -13,7 +13,7 @@ function Header() {
         <Navbar.Brand>
           <Link to="/">
             {" "}
-            <img alt="" src={logoheader} className="d-flex align-top" />
+            <img alt="" src={logoheader} className="img-fluid align-center" />
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle />

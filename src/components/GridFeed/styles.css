@@ -1,0 +1,12 @@
+.buttonpost {
+    background-color: #6033AA;
+    color: white;
+    font-size: 1rem;
+    padding: 0.1rem 3rem;
+    margin-right: 1%;
+}
+
+.buttonpost:hover {
+    background-color: #4200ab;
+    color: white;
+}
