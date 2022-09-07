@@ -7,11 +7,13 @@
 
 .navbar-text {
     color: #76BB4C;
-    font-size: larger;
+    font-size: 24px;
 }
 
 .sair {
     color: #6033AA;
+    font-size: 16px;
+
 }
 
 a {
