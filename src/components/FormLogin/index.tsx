@@ -1,7 +1,6 @@
 import Form from "react-bootstrap/Form";
 import ButtonSubmit from "../ButtonSubmit";
 import LogoLogin from "../LogoLogin";
-import Input from "../Input";
 import { Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,7 +26,7 @@ function FormLogin() {
           placeholder="senha"
           className="mb-3 text-center w-100"
         />
-        <ButtonSubmit className="w-100 p-5" text="entrar" action="submit" />
+        <ButtonSubmit className="w-100" text="entrar" action="submit" />
         <Link className="link" to="/cadastro">
           cadastre-se
         </Link>
