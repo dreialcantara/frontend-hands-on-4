@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   background-image: url(${backgroundimage});
+  background-size: contain;
   margin: 0;
   padding: 0;
   height: 100vh;
