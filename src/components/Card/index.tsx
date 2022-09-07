@@ -1,22 +1,28 @@
 import Card from "react-bootstrap/Card";
 
+import "./styles.css";
+
 const imgfriend = require("../../img/imgfriend.png");
 
 function CardFeed() {
   return (
-    <Card className="d-flex w-50 rounded-0 border-top-0">
-      <Card.Title>
-        <div className="d-flex">
-          <img className="img-fluid" src={imgfriend} alt="imagem de usuário" />
-          <div className="flex-column">
-            <p>Vinicius - apê 42</p>
-            <p>10/06/2022 09:00</p>
+    <Card className="d-flex w-50 rounded-0 border-top-0   ">
+      <Card.Body className="d-flex">
+        <img src={imgfriend} className="imgfriend align-self-center " alt="" />
+        <div className="d-flex w-0 h-0 mb-2 ">
+          <div className="d-flex flex-column ">
+            <div className="d-flex flex-column">
+              <span className="nomeap mt-1 w-75">Vinicius - apê 42</span>
+              <span className="datapost mb-0">10/06/2022 09:00</span>
+            </div>
+            <div className="txtpost mt-2">
+              <span className=" w-100">
+                Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém
+                usando furadeira 2 HORAS DA MANHÃ!!! ó_ó
+              </span>
+            </div>
           </div>
         </div>
-      </Card.Title>
-      <Card.Body>
-        Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém usando
-        furadeira 2 HORAS DA MANHÃ!!! ó_ó
       </Card.Body>
     </Card>
   );

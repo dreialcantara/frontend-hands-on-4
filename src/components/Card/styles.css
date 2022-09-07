@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    font-family: 'Questrial', sans-serif !important;
+}
+
+.imgfriend {
+    margin-left: 5%;
+    margin-right: 5%;
+    object-fit: contain;
+}
+
+.nomeap {
+    font-size: 16px;
+    color: #76BB4C;
+    line-height: 1;
+}
+
+.datapost {
+    font-size: 14px;
+    color: #919191;
+    margin-top: 0%;
+    line-height: 1;
+}
+
+.txtpost {
+    color: #000000;
+    line-height: 1;
+}

@@ -8,7 +8,7 @@ const logoheader = require("../../img/logoheader.png");
 
 function Header() {
   return (
-    <Navbar className="navbar p-0 shadow-sm bg-white rounded position-sticky">
+    <Navbar className="navbar p-0 shadow-sm bg-white rounded">
       <Container>
         <Navbar.Brand>
           <Link to="/">
