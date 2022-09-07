@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
+import Feed from "./pages/Feed";
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
       <WrapperRoutes>
         <Route path="/" element={<Login />} />
         <Route path="cadastro" element={<Cadastro />} />
+        <Route path="feed" element={<Feed />} />
       </WrapperRoutes>
     </BrowserRouter>
   );

@@ -5,12 +5,14 @@ const backgroundimage = require("../img/bg.png");
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   background-image: url(${backgroundimage});
   background-size: contain;
+  background-repeat: repeat;
   margin: 0;
   padding: 0;
   height: 100vh;
-  align-items: center;
+  width: 100vw;
 `;
 
 export const LoginContainer = styled.div`

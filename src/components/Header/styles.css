@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    font-family: 'Questrial', sans-serif;
+
+}
+
+.navbar-text {
+    font-size: larger;
+}
+
+.sair {
+
+    text-decoration: none;
+    color: pur
+}
