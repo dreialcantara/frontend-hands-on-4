@@ -2,7 +2,7 @@ import React from "react";
 
 import Header from "../../components/Header";
 import CardPost from "../../components/CardPost";
-import CardFeed from "../../components/Card";
+import CardFeed from "../../components/CardFeed";
 import Container from "react-bootstrap/Container";
 
 import "./styles.css";
@@ -17,6 +17,9 @@ function Login() {
           className="ContainerFeed border-end border-start justify-content-center"
         >
           <CardPost />
+          <CardFeed />
+          <CardFeed />
+          <CardFeed />
           <CardFeed />
           <CardFeed />
           <CardFeed />
