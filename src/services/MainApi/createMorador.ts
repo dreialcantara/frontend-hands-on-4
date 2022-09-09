@@ -12,5 +12,14 @@ export function cadastroMorador(payload: MoradorPayload) {
 }
 
 export function listarPosts() {
-  return baseApi.post("/posts");
+  return baseApi.get("/posts");
+}
+
+interface PostPayload {
+  content: string;
+  user?: any;
+}
+
+export function createPost(payload: PostPayload) {
+  return baseApi.post("/user/:idUser/create");
 }
