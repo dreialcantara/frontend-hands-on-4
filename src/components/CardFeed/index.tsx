@@ -1,29 +1,38 @@
 import Card from "react-bootstrap/Card";
-
 import "./styles.css";
 
-const imgfriend = require("../../img/imgfriend.png");
+const profileimg = require("../../img/profileimg.png");
+let publicacoes = true;
 
 function CardFeed() {
   return (
-    <Card className="d-flex w-100 sm-w-100 rounded-0 border-top-0 border-end-0 border-start-0   ">
-      <Card.Body className="d-flex">
-        <img src={imgfriend} className="imgfriend align-self-center " alt="" />
-        <div className="d-flex w-0 h-0 mb-2 ">
-          <div className="d-flex flex-column ">
-            <div className="d-flex flex-column">
-              <span className="nomeap mt-1 w-75">Vinicius - apê 42</span>
-              <span className="datapost mb-0">10/06/2022 09:00</span>
+    <Card className="d-flex box-information rounded-0 border-top-0">
+      {(publicacoes
+        ? <div className="d-flex">
+            <div className="avatar-information">
+              <img className="img-fluid" src={profileimg} alt="imagem de usuário" />
             </div>
-            <div className="txtpost mt-2">
-              <span className=" w-100">
-                Poxa galera, vamos respeitar o horário de silêncio! Tinha alguém
-                usando furadeira 2 HORAS DA MANHÃ!!! ó_ó
-              </span>
+            <div className="user-information">
+              <Card.Title>
+                <div className="d-flex">
+                  <div className="flex-column">
+                    <div className="author-information">
+                      <p className="name">name</p>
+                      <p>description</p>
+                  </div>
+                  <div className="publicacao">
+                    <p>conteudo publicacao</p>
+                  </div>
+                  </div>
+                </div>
+              </Card.Title>
             </div>
           </div>
+
+        : <div>
+          <p>Voce ainda nao fez nenhuma publicacao</p>
         </div>
-      </Card.Body>
+      )}
     </Card>
   );
 }
