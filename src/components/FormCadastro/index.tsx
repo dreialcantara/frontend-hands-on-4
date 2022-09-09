@@ -6,35 +6,49 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 import * as C from "../AppStyles";
-import { useState } from "react";
+import { FormEvent, useState } from "react";
+import { cadastroMorador } from "../../services/MainApi/createMorador";
 
 function FormCadastro() {
-  const [nomeMorador, setNomeMorador] = useState<string>("");
-  const [emailMorador, setEmailMorador] = useState<string>("");
-  const [passwordMorador, setPasswordMorador] = useState<any>("");
-  const [confPasswordMorador, setConfPasswordMorador] = useState<any>("");
-  const [apMorador, setApMorador] = useState<string>("");
+  const [name, setNomeMorador] = useState<string>("");
+  const [email, setEmailMorador] = useState<string>("");
+  const [password, setPasswordMorador] = useState<any>("");
+  const [confPassword, setConfPasswordMorador] = useState<any>("");
+  const [appartament, setApMorador] = useState<string>("");
   const [fotoMorador, setFotoMorador] = useState<string>("");
 
-  const payload = {
-    nomeMorador,
-    emailMorador,
-    passwordMorador,
-    apMorador,
+  const cadastro = async (event: FormEvent) => {
+    event.preventDefault();
+
+    const payload = {
+      name,
+      email,
+      password,
+      appartament,
+    };
+
+    try {
+      const response = await cadastroMorador(payload);
+      if (response.status !== 201) {
+        return alert("Algo está errado");
+      }
+      alert("Cadastro Realizado!");
+    } catch (error) {
+      alert("Algo está errado");
+    }
   };
 
   //verificar como aplicar função de confirmação de senhas iguais;
   function validatePassword() {
-    if (passwordMorador !== confPasswordMorador) {
-      confPasswordMorador.setCustomValidity("Senhas diferentes!");
+    if (password !== confPassword) {
+      confPassword.setCustomValidity("Senhas diferentes!");
     } else {
-      confPasswordMorador.setCustomValidity("");
+      confPassword.setCustomValidity("");
     }
 
-    passwordMorador.onchange = validatePassword;
-    confPasswordMorador.onkeyup = validatePassword;
+    password.onchange = validatePassword;
+    password.onkeyup = validatePassword;
   }
-
   //
 
   return (
@@ -42,16 +56,11 @@ function FormCadastro() {
       <div className="container justify-content-center align-items-center">
         <LogoLogin className="" />
         <p className="mb-4">CADASTRO</p>
-        <Form
-          onSubmit={(event) => {
-            event.preventDefault();
-            console.log(payload);
-          }}
-        >
+        <Form onSubmit={cadastro}>
           <Form.Control
             type="text"
             onChange={(event) => setNomeMorador(event.target.value)}
-            value={nomeMorador}
+            value={name}
             placeholder="nome"
             className="mb-2 text-center w-100"
             required
@@ -59,7 +68,7 @@ function FormCadastro() {
           <Form.Control
             type="email"
             onChange={(event) => setEmailMorador(event.target.value)}
-            value={emailMorador}
+            value={email}
             placeholder="email"
             className="mb-2 text-center w-100"
             required
@@ -68,7 +77,7 @@ function FormCadastro() {
           <Form.Control
             type="password"
             onChange={(event) => setPasswordMorador(event.target.value)}
-            value={passwordMorador}
+            value={password}
             placeholder="senha"
             className="mb-2 text-center w-100"
             required
@@ -78,7 +87,7 @@ function FormCadastro() {
             type="password"
             placeholder="confirmar senha"
             onChange={(event) => setConfPasswordMorador(event.target.value)}
-            value={confPasswordMorador}
+            value={confPassword}
             className="mb-2 text-center w-100"
             required
           />
@@ -86,7 +95,7 @@ function FormCadastro() {
           <Form.Control
             type="text"
             onChange={(event) => setApMorador(event.target.value)}
-            value={apMorador}
+            value={appartament}
             placeholder="unidade/apartamento"
             className="mb-2 text-center w-100"
             required
