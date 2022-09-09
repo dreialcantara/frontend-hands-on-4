@@ -4,7 +4,7 @@ import LogoLogin from "../LogoLogin";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-
+import { Link } from "react-router-dom";
 import * as C from "../AppStyles";
 import { FormEvent, useState } from "react";
 import { cadastroMorador } from "../../services/MainApi/createMorador";
@@ -111,6 +111,9 @@ function FormCadastro() {
 
           <ButtonSubmit className="" text="cadastrar" action="submit" />
         </Form>
+        <Link className="link" to="/">
+          já possui conta? realize o login
+        </Link>
       </div>
     </C.LoginContainer>
   );
