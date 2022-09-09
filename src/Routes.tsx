@@ -6,6 +6,7 @@ import {
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import Feed from "./pages/Feed";
+import Usuario from "./pages/Usuario";
 
 export default function Routes() {
   return (
@@ -14,6 +15,7 @@ export default function Routes() {
         <Route path="/" element={<Login />} />
         <Route path="cadastro" element={<Cadastro />} />
         <Route path="feed" element={<Feed />} />
+        <Route path="usuario" element={<Usuario />} />
       </WrapperRoutes>
     </BrowserRouter>
   );
